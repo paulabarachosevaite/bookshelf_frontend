@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "/api/lists/";
+const API_URL = process.env.REACT_APP_API_URL + "/api/lists/";
 
 const getList = async (listId, token) => {
   const config = {
